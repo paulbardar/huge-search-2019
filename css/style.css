@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	transition: all 0.1s ease-in;
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			 box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+html, body {
+	min-height: 100%;
+}
+
+body {
+	font: 500 18px Arial, sans-serif;
+	/* padding: 0 10%; */
+	background: #F1F1F1;
+	color:#C2C2C2;
+}
+
+.ba-container{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.ba-search-form{
+	font-size: 0;
+	padding: 30px 0;
+	width: 80%;
+	margin: 0 auto;
+}
+.ba-search-form > [type="search"]:focus{
+	outline: none;
+}
+.ba-search-form > [type="search"] {
+	font-size: 95px;
+	display: inline-block;
+	width: calc(100% - 90px);
+	vertical-align: middle;
+	border: none;
+	background: none;
+	color: #ec5a62;
+	font-weight: 500;
+}
+.ba-search-form > button{
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	background: none;
+	border-radius: 0;
+	cursor: pointer;
+	background: url("../img/magnifier.svg");
+}
+.ba-search-form button:hover{
+	transform: scale(1.1);
+	background-color: rgba(118, 117, 128, 0.05);
+}
+
+.ba-search-columns{
+	color: #333;
+	margin-top: 40px;
+	width: 100%;
+	padding: 0 10%;
+	font-size: 0;
+}
+.ba-column{
+	font-size: 14px;
+	width: 30%;
+	padding: 0 0 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+.ba-column:nth-child(2){
+	margin: 0 5%;
+}
+.ba-column-title{
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #c2c2c2;
+}
+.ba-hugesearch-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.ba-hugesearch-list a{
+	padding: 11px;
+	display: block;
+	margin: 5px 0;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 5px;
+	background: rgba(118, 117, 128, 0.05);
+}
+
+.ba-hugesearch-list img{
+	display: inline-block;
+	width: 50px;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+.ba-hugesearch-list a h3{
+	vertical-align: middle;
+	font-size: 0.85em;
+	display: inline-block;
+	text-transform: capitalize;
+	font-weight: 700;
+	width: calc(100% - 70px);
+	color: #c2c2c2;
+}
+.ba-circle{
+	border-radius: 50%;
+}
+.ba-hugesearch-list a:hover{
+	background: rgba(118, 117, 128, 0.1);
+}
+.ba-hugesearch-list a:hover h3{
+	color: #EC5A62;
+}
+.ba-hugesearch-list a:hover img{
+	transform: scale(1.1);
+}
